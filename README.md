@@ -184,7 +184,7 @@ public OllamaChatClientService(ChatClient.Builder builder) {
   目前使用 **RestTemplate** 處理 HTTP 請求，未來計劃根據 **Spring 5** 的建議，改用 **WebClient**，以提升請求處理效率並享受更多功能與靈活性。
 
 - **DTO 實現與 Spring Boot API**：
-  在學習完 **Spring MVC** 後，我對 JSON 格式與 Java 類之間的轉換有了更深入的了解，因此使用 **DTO** 與 **LINE Bot Message API** 進行互動。不過，發現 **Spring Boot** 提供了相關的 API，這樣的做法將更為便捷，未來將改用內建解決方案。
+  在學習完 **Spring MVC** 後，我對 JSON 格式與 Java 類之間的轉換有了更深入的了解，因此使用 **DTO** 與 **LINE Bot Message API** 進行互動。不過之後發現，透過 Spring Boot 及其整合的第三方依賴，可以更方便地與 LINE Bot API 交互。因此，未來將考慮使用這些解決方案來簡化開發流程。
 
 - **日誌與異常訊息處理**：
   當前專案主要集中於功能實現，對於日誌與異常訊息處理尚未進行詳細規劃。未來將加強這方面的設計，以便有效排查錯誤，提升系統穩定性。
